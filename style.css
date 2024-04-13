@@ -159,9 +159,11 @@ html {
     top: 80%;
     transform: translate(-50%,-50%);
 }
+/*
 .imge img:hover + div {
     display: none;
 }
+*/
 .imge div .s {
     width: 100px;
     height:100px;
@@ -175,6 +177,7 @@ html {
     transition: all 0.4s 0.3s ;
     order: 2;
 }
+/*
 .imge div .s:hover {
     width: 400px;
     height: 400px;
@@ -188,7 +191,7 @@ html {
         width: 600px;
         height: 600px;
     }
-}
+}*/
 .imge div span {
     display:block;
     color: black;
