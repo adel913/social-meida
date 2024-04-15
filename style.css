@@ -38,7 +38,7 @@ ul {
     background-color: #F3F3F3;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 56px;
+    margin-top: 83px;
 }
 
 ul li {
@@ -158,12 +158,16 @@ html {
     left: 50%;
     top: 80%;
     transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 /*
 .imge img:hover + div {
     display: none;
 }
-*/
+*//*
 .imge div .s {
     width: 100px;
     height:100px;
@@ -194,22 +198,13 @@ html {
 }*/
 .imge div span {
     display:block;
-    color: black;
+    color: #4f4747;
     font-size: 15px;
     font-family: sans-serif;
-    /*
-    position: absolute;
-    top:20%;
-    left:50%;
-    margin-left:10px ;
-    transform: translate(-50% ,-50%);
-    */
     font-weight: 900;
-    margin-left:10px ;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
+    width: fit-content !important;
+    height: fit-content !important;
+    
 }
 #copyButton {
     /*
@@ -222,20 +217,25 @@ html {
     font-size: 15px;
     font-weight: 900;
     background-color: #F3F3F3;
-    border-color:black;
+    border-color:#4f4747;
+    color: rgb(43, 2, 2);
+    margin: 0px;
+    margin-top: 10px;
     padding:4px;
+    /*
     position: absolute;
-    top:22%;
-    left:45%;
+    top:30%;
+    left:50%;
     order: 1;
     transform: translate(-50% ,-50%);
+    */
 }
 @media (min-width: 700px) {
+    .imge div span {
+        font-size: 30px;
+    }
     #copyButton {
-        top:22%;
-        left:50%;
         font-size: 30PX;
-        transform: translate(-50% ,-50%);
     }
     #copyButton i{
         font-size: 30px !important;
@@ -247,6 +247,7 @@ html {
     display: inline;
     padding: 0px;
 }
+/*
 @media (min-width: 350px) {
     .imge div .s {
         width: 130px;
@@ -270,13 +271,25 @@ html {
     .imge div span {
         font-size: 28px;
     }
-}
+}*/
 button:nth-last-of-type(1) {
     background-color: white;
     border-color: green;
     font-weight: 700;
     display: block;
     margin-bottom: 8px;
+}
+.foot {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ background-color:#F3F3F3;
+ width: 100%;
+ font-size: 14px ;
+}
+.foot span {
+    margin: 0px 2px;
+    color:#19c8fa;
 }
 /*
 .container ul li >div {
