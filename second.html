@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  rel="stylesheet" href="webfonts/all.min.css"/>
+    <link  rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dola WepSite</title>
+</head>
+<body>
+        <div class="container">
+            <div class="imge">
+                <img  src="IMG_0676.jpg">
+                <div>
+                    <span>dola ❤️</span>
+                    <span>programming enigneer🧑‍💻</span>
+                    <span>Time doesn't change,time reveals🖤</span>
+                    <button type="button" id="copyButton">share website <i class="fa-solid fa-share-from-square"></i></button>
+                    <!--<img class="s" src="00100sPORTRAIT_00100_BURST٢٠٢١٠٧١٨١٧٣٨٥٠٤٠٣_COVER.jpg">-->
+                </div>
+                
+            </div>
+            <ul class="e">
+                <li><a href="https://www.facebook.com/adel.mohmed.161214?mibextid=ZbWKwL" target="_blank" > <i class="fa-brands fa-facebook-f fa-2x flex-c"></i></a><span>facebook</span></li>
+                <li><a href="https://www.instagram.com/xx_adelmohamed_xx?igsh=cjZjN3NzNjNvc2o4"target="_blank"><i class="fa-brands fa-instagram"></i></a><span>instagram</span></li>
+                <li><a href="https://www.linkedin.com/in/adel-mohamed-682893279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin fa-2x flex-c"></i></a><span>linked in</span></li>
+                <li><a href="https://x.com/dolamohamed2003?t=XtF-MybOrWIE_M-dE26gDg&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a><span>twitter</span></li>
+                <li><a href="https://www.snapchat.com/add/adelmohmed26551?share_id=-N1P_SgjbFM&locale=ar-EG" target="_blank"><i class="fa-brands fa-snapchat"></i></a><span>Snapchat</span></li>
+                <li><a href="https://www.tiktok.com/@adelmohmed23?_t=8lCAw2xJTc6&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a> <span>tiktok</span></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=%2B201142950723&text&type=phone_number&app_absent=0"  target="_blank"><i class="fa-brands fa-whatsapp "></i> whatsApp number </a> </i>
+                    <!-- <from>
+                        <label for="whatsApp"></label>
+                        <input type="text" value="0114 295 0723" id="whatsApp" readonly>
+                        <button id="copy whatsapp">Copy Number</button>
+                    </from>
+                -->
+                </li>
+            </ul>
+        </div>
+        <div class="foot">&copy;  2024 <span> adel </span>  all right reserved</div>
+        <script>
+            document.getElementById("copyButton").addEventListener("click", function() {
+              // النص الذي ترغب في نسخه
+              var textToCopy = new URL('https://adel913.github.io/social-meida/');
+          
+              // إنشاء عنصر input مؤقت لنسخ النص
+              var tempInput = document.createElement("input");
+              tempInput.value = textToCopy;
+              document.body.appendChild(tempInput);
+          
+              // نسخ النص إلى الحافظة
+              tempInput.select();
+              document.execCommand("copy");
+              document.body.removeChild(tempInput);
+          
+              // رسالة تأكيد النسخ
+              alert("تم نسخ لينك إلى الحافظة!");
+            });
+            /*
+                            document.getElementById("copy whatsapp").addEventListener("click", function() {
+              // النص الذي ترغب في نسخه
+              var textToCopy = "0114 295 0723";
+          
+              // إنشاء عنصر input مؤقت لنسخ النص
+              var tempInput = document.createElement("input");
+              tempInput.value = textToCopy;
+              document.body.appendChild(tempInput);
+          
+              // نسخ النص إلى الحافظة
+              tempInput.select();
+              document.execCommand("copy");
+              document.body.removeChild(tempInput);
+          
+              // رسالة تأكيد النسخ
+              alert("تم نسخ الرقم إلى الحافظة!");
+            });
+            */
+          </script>
+</body>
+</html>
